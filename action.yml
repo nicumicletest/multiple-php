@@ -1,0 +1,23 @@
+# action.yml
+name: "Multiple PHP Versions linter"
+description: "Multiple PHP versions linter"
+inputs:
+  folder-to-exclude:
+    description: "Folder to exclude"
+    required: false
+    default: '! -path "./vendor/*"'
+  working-directory:
+    description: "Working directory"
+    required: false
+    default: "./"
+  php-version:
+    description: "Working directory"
+    required: true
+    default: "5.6"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.working-directory }}
+    - ${{ inputs.folder-to-exclude }}
+    - ${{ inputs.php-version }}
