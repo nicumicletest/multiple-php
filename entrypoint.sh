@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-sh -c "apt-get install php$3 php$3-fpm --no-install-recommends"
+sh -c "apt-get install php$3 php$3-fpm --no-install-recommends --yes"
 
 cd $1
 
