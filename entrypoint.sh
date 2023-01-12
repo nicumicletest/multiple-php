@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-sh -c "apk add php$3 php$3-fpm"
+sh -c "apt-get install php$3 php$3-fpm --no-install-recommends"
 
 cd $1
 
