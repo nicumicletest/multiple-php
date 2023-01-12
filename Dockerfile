@@ -4,7 +4,8 @@ RUN apk update
 #RUN apt install apache2 libapache2-mod-fcgid --yes
 
 # add ondrej
-RUN apk add software-properties-common
+#RUN apk add software-properties-common
+
 RUN add-apt-repository ppa:ondrej/php
 
 # install PHP
