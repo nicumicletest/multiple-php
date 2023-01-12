@@ -4,7 +4,7 @@ FROM ubuntu:latest
 #RUN apt install apache2 libapache2-mod-fcgid --yes
 
 # add ondrej
-#RUN apt install software-properties-common --yes
+RUN apt install software-properties-common --yes
 RUN add-apt-repository ppa:ondrej/php --yes
 
 # install PHP
