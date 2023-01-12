@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM alpine
 
 RUN apt update
 #RUN apt install apache2 libapache2-mod-fcgid --yes
