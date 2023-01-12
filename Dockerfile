@@ -1,10 +1,10 @@
-FROM ubuntu:latest
+FROM alpine
 
-RUN apt-get update
+RUN apk update
 #RUN apt install apache2 libapache2-mod-fcgid --yes
 
 # add ondrej
-RUN apt-get install software-properties-common --yes
+RUN apk add software-properties-common --yes
 RUN add-apt-repository ppa:ondrej/php --yes
 
 # install PHP
