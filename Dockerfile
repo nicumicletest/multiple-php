@@ -8,12 +8,12 @@ RUN apt install software-properties-common --yes
 RUN add-apt-repository ppa:ondrej/php --yes
 
 # install PHP
-RUN apt install php5.6 php5.6-fpm --yes
-RUN apt install php7.0 php7.0-fpm --yes
-RUN apt install php7.3 php7.3-fpm --yes
-RUN apt install php8.0 php8.0-fpm --yes
-RUN apt install php8.1 php8.1-fpm --yes
-RUN apt install php8.2 php8.2-fpm --yes
+#RUN apt install php5.6 php5.6-fpm --yes
+#RUN apt install php7.0 php7.0-fpm --yes
+#RUN apt install php7.3 php7.3-fpm --yes
+#RUN apt install php8.0 php8.0-fpm --yes
+#RUN apt install php8.1 php8.1-fpm --yes
+#RUN apt install php8.2 php8.2-fpm --yes
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
