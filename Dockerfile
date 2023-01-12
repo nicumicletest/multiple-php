@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-#RUN apt update
+RUN apt update
 #RUN apt install apache2 libapache2-mod-fcgid --yes
 
 # add ondrej
